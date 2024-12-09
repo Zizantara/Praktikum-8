@@ -35,13 +35,18 @@ class DaftarNilaiMahasiswa:
         else:
             print(f"Mahasiswa dengan nama {nama} tidak ditemukan.")
 
-
 # Contoh penggunaan:
 daftar = DaftarNilaiMahasiswa()
-daftar.tambah("Andi", 85)
-daftar.tambah("Budi", 90)
+
+#Menambah data
+daftar.tambah("arfi", 90)
+daftar.tambah("aziz", 80)
 daftar.tampilkan()
-daftar.ubah("Andi", 95)
+
+#Mengubah data
+daftar.ubah("aziz", 95)
 daftar.tampilkan()
-daftar.hapus("Budi")
+
+#Menghapus data
+daftar.hapus("arfi")
 daftar.tampilkan()
